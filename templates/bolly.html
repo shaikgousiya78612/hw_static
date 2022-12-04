@@ -1,0 +1,85 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+   <center><h1 class="alert alert-warning">BOLLYWOOD</h1></center>
+   <p class="alert alert-dark">Hindi cinema, popularly known as Bollywood and formerly as Bombay cinema,[4] refers to the film industry based in Mumbai, engaged in production of motion pictures in Hindi language. The popular term Bollywood, is a portmanteau of "Bombay" (former name of Mumbai) and "Hollywood". The industry is a part of the larger Indian cinema, which also includes South Cinema and other smaller film industries</p>
+   <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="https://www.imdb.com/list/ls058201636/">HORROR</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.bollywoodhungama.com/latest-new-movies/yr-2022/lg-hindi/gnr-comedy/">COMEDY</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.imdb.com/list/ls567141993/">ROMANCE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://timesofindia.indiatimes.com/entertainment/latest-new-movies/hindi/thriller/61017241">THRILLER</a>
+    </li>
+  </ul>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-4">
+        <div class="card">
+          <img src="{% static 'images/c1.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="alert alert-success" class="card-title">Chhichhore</h5>
+            <p class="alert alert-danger" class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="{% static 'images/c2.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="alert alert-info" class="card-title">Ishq</h5>
+            <p class="alert alert-warning" class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="{% static 'images/c3.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="alert alert-primary" class="card-title">Raja Hindusthani</h5>
+            <p class="alert alert-success" class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="{% static 'images/c4.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="alert alert-secondary" class="card-title">Maine thumse pyar</h5>
+            <p class="alert alert-dark" class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <center><a class="alert alert-danger" href="{% url 'holly' %}">Go To Hollywod</a>
+      <a class="alert alert-success" href="{% url 'movies' %}">Go To Bollywod</a></center>
+  </body>
+</html>
